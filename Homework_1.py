@@ -1,5 +1,5 @@
-# Name:
-# SBUID: 
+# Name: Hyunin Hwang
+# SBUID: 115241990
 
 # Remove the ellipses (...) when writing your solutions.
 
@@ -8,10 +8,16 @@
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
 
 def fahrenheit2celsius(fahrenheit): 
-   ...
+   #converting fahrenheit2celsius
+   celsius = float(input('Enter celsius in fahrenheit'))
+   celsius = (fahrenheit -32) * (5/9)
+   return celsius
+
+print(fahrenheit2celsius(90))
 
 def what_to_wear(celsius):
-   ...
+   #what to wear in celsius
+
 
 # ---------------------------- Exercise II --------------------------------------
 # ----------------- Area and perimeter of a triangle  ---------------------------

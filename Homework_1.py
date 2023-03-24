@@ -7,17 +7,23 @@
 # ----------------- Convert Fahrenheit to Celsius -------------------------------
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
 
-def fahrenheit2celsius(fahrenheit): 
-   #converting fahrenheit2celsius
+#converting fahrenheit2celsius
+def fahrenheit2celsius(fahrenheit):
    celsius = float(input('Enter celsius in fahrenheit'))
-   celsius = (fahrenheit -32) * (5/9)
-   return celsius
-
-print(fahrenheit2celsius(90))
+   return int(5/9)*(fahrenheit-32)
 
 def what_to_wear(celsius):
    #what to wear in celsius
-
+   if (celsius<-10):
+       print("Wear a Puffy jacket")
+   elif (celsius>=-10) and (celsius<=0):
+       print("Wear a Scarf")
+   elif (celsius>=0) and (celsius<=10):
+       print("Wear a Sweater")
+   elif (celsius>=10) and (celsius<=20):
+       print("Wear a Light jacket")
+   else:
+       print("Wear T-shirt")
 
 # ---------------------------- Exercise II --------------------------------------
 # ----------------- Area and perimeter of a triangle  ---------------------------
@@ -25,13 +31,26 @@ def what_to_wear(celsius):
 # compute_triangle_perimeter from scratch  
 
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
-    ...
+    first = (x1 * y2) + (x2 * y3) + (x3 * y1)
+    second = (x1 * y3) + (x2 * y1) + (x3 * y2)
+    shoelace_triangle_area = (first - second) * (1/2)
+    return int(abs(shoelace_triangle_area))
+
 
 def euclidean_distance(x1, y1, x2, y2):
-    ...
+    p1 = (x1, y1)
+    p2 = (x2, y2)
+    return int[{(x1 - x2)**2} + {(y1 - y2)**2}]**(1/2)
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    ...
+    p1 = (x1, y1)
+    p2 = (x2, y2)
+    p3 = (x3, y3)
+    s1 = [[{(x1 - x2)**2} + {(y1 - y2)**2}]**(1/2)]
+    s2 = [[{(x2 - x3)**2} + {(y2 - y3)**2}]**(1/2)]
+    s3 = [[{(x3 - x1)**2} + {(y3 - y1)**2}]**(1/2)]
+    return int(s1 + s2 + s3)
+
 
 
 # ---------------------------- Exercise III -------------------------------------

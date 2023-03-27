@@ -8,6 +8,9 @@
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
 
 #converting fahrenheit2celsius
+import math
+
+
 def fahrenheit2celsius(fahrenheit):
    celsius = float(input('Enter celsius in fahrenheit'))
    return int(5/9)*(fahrenheit-32)
@@ -57,26 +60,23 @@ def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
 # ----------------- Compute the area of a regular polygon -----------------------
 # TODO: Fill the functions deg2rad, apothem  and polygon_area 
 
-from math import pi
+
 
 def deg2rad(deg):
-    return int(deg*(pi/180))
+    r = deg*(math.pi/180)
+    return r
 
 
 
 from math import pi, tan
 
 def apothem(number_sides, length_side):
-    number_sides = int(input("Input number of sides"))
-    length_side = float(input("Input the length of a side"))
-    apothem = (length_side) / {2 * (tan(180/number_sides))}
+    apothem = (length_side) / {2 * (math.tan(deg2rad(180/number_sides)))}
     return int(apothem)
 
 def polygon_area(number_sides, length_side):
-   number_sides = int(input("Input number of sides"))
-   length_side = float(input("Input the length of a side"))
-   polygon_area = {number_sides * (length_side **2)} / {4 * (tan(pi/number_sides))}
-   return int(polygon_area)
+    polygon_area = number_sides * length_side * apothem(number_sides, length_side)/2
+    return int(polygon_area)
 
 
 # ---------------------------- Test -------------------------------------

@@ -1,11 +1,22 @@
 # Name: Hyunin Hwang
 # SBUID: 115241990
-
+##################### SCORE ######################
+####### Score:  1/10
+#################################################
 # Remove the ellipses (...) when writing your solutions.
 
 # ---------------------------- Exercise I ---------------------------------------
 # ----------------- Convert Fahrenheit to Celsius -------------------------------
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
+######### your output -> all incorrect output and rest didnt execute
+# Enter celsius in fahrenheit44
+# Wear a Scarf
+# Traceback (most recent call last):
+#   File "d:\CSE 101 Ass1\Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27\Hyunin-Hwang\Homework_1.py", line 93, in <module>
+#     perimeter = compute_triangle_perimeter(x1, y1, x2, y2, x3, y3)
+#   File "d:\CSE 101 Ass1\Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27\Hyunin-Hwang\Homework_1.py", line 52, in compute_triangle_perimeter
+#     s1 = [[{(x1 - x2)**2} + {(y1 - y2)**2}]**(1/2)]
+# TypeError: unsupported operand type(s) for +: 'set' and 'set'
 
 #converting fahrenheit2celsius
 import math

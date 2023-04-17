@@ -1,7 +1,7 @@
 # Name: Hyunin Hwang
 # SBUID: 115241990
 ##################### SCORE ######################
-####### Score:  1/10
+####### Score:  8/10
 #################################################
 # Remove the ellipses (...) when writing your solutions.
 
